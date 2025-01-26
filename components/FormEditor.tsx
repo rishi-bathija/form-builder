@@ -46,7 +46,7 @@ const EditMode: React.FC = () => {
                         onChange={(e) =>
                             setNewField((prev) => ({ ...prev, label: e.target.value }))
                         }
-                        className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-400"
+                        className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-400 text-black"
                     />
                     <select
                         value={newField.type}
@@ -56,7 +56,7 @@ const EditMode: React.FC = () => {
                                 type: e.target.value as FormField["type"],
                             }))
                         }
-                        className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-400"
+                        className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-400 text-black"
                     >
                         <option value="text">Text</option>
                         <option value="checkbox">Checkbox</option>
@@ -75,7 +75,7 @@ const EditMode: React.FC = () => {
                                 placeholder="Add Option"
                                 value={newOption}
                                 onChange={(e) => setNewOption(e.target.value)}
-                                className="flex-grow p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-400"
+                                className="flex-grow p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-400 text-black"
                             />
                             <button
                                 onClick={addOption}
